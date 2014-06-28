@@ -5,19 +5,25 @@
     android:background="@android:color/black"
     tools:context="com.erinkabbash.helloworld.MainActivity$PlaceholderFragment" >
 
-    <ImageView
-        android:id="@+id/helloWorldImage"
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/helloworld"
-        android:layout_centerVertical="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/operateButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/helloWorldImage"
-        android:paddingTop="0dp"
-        android:text="Push To Operate" />
+        <ImageView
+            android:id="@+id/helloWorldImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/helloworld" />
+
+        <Button
+            android:id="@+id/operateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:text="Push To Operate" />
+    </LinearLayout>
 
 </RelativeLayout>
